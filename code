@@ -1,0 +1,19 @@
+alienDictionnary = {"we": "vorag", "come": "zangue", "in": "zone",
+                     "peace": "argh", "hello": "kodar", "may I": "znak-az",
+                     "borrow": "liftit", "a little": "tzoum", "of":"kirk",
+                     "fuel": "kakboum", "for": "griz", "rocket": "hopsôtt",
+                     "please": "selpinne", "don't": "règ", "pull": "flabil",
+                     "not": "baaaaaaaarn", "welcome": "unkip", "to": "daragaz",
+                     "ours": "mandig", "new": "brang", "lords": "bap",
+                     "aliens": "marandjine"}
+
+englishSentence = input("Write a sentence to translate : ")
+englishWords = englishSentence.lower().split()
+
+alienWords = []
+for word in englishWords:
+    if word in alienDictionnary:
+        alienWords.append(alienDictionnary[word])
+    else:
+        alienWords.append(word)
+print ("In Alien we say :", " ".join(alienWords))
